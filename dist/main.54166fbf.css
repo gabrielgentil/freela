@@ -13,6 +13,11 @@ html {
   margin-right: 10%;
 }
 
+.boxed-titulo {
+  margin-left: 31%;
+  margin-right: 32%;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -71,11 +76,30 @@ input:focus {
   background-color: #882222;
 }
 
+.container-red-titulo {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #882222;
+  margin-top: -68px;
+  height: 357px;
+}
+
 .container-purple {
   margin-top: 80px;
   margin-bottom: 80px;
   padding: 20px 50px 55px 50px;
   background-color: #4e4393;
+  text-align: center;
+}
+
+.container-purple-titulo {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #4e4393;
+  text-align: center;
+  margin-top: -4px;
 }
 
 .container-pink {
@@ -83,6 +107,20 @@ input:focus {
   margin-bottom: 80px;
   padding: 20px 50px 55px 50px;
   background-color: #8a2b45;
+}
+
+.container-pink-titulo {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #8a2b45;
+  margin-bottom: -1px;
+  height: 357px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 .card-red {
@@ -99,6 +137,7 @@ input:focus {
   min-height: 300px;
   box-shadow: 10px 10px #6F1B1D;
   background-color: #7869AA;
+  box-shadow: 10px 10px #473f3f;
 }
 
 .card-pink {
@@ -107,6 +146,11 @@ input:focus {
   min-height: 300px;
   box-shadow: 10px 10px #6F1B1D;
   background-color: #8a2b45;
+}
+
+.text-center {
+  text-align: center;
+  color: white;
 }
 
 form .form-group {
@@ -131,14 +175,66 @@ form .confirmation-button:active {
   opacity: 90%;
 }
 
-.quantity-button {
+.div-cadastro {
+  text-align: right;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+}
+
+.valor-titulo {
+  font-size: 37px;
+  color: orange;
+  font-weight: bold;
+}
+
+.cadastro {
+  width: 122px;
+  height: 32px;
+  color: white;
+  font-size: 18px;
+  background-color: #48ad1d;
+  margin: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 10px 10px #473f3f;
+}
+.cadastro:hover {
+  cursor: pointer;
+}
+.cadastro:active {
+  opacity: 90%;
+  transform: scale(0.9);
+}
+
+.quantity-button-numero {
   width: 40px;
   height: 40px;
   color: white;
   font-size: 30px;
+  background-color: #4e4393;
+  margin: 10px;
+  font-weight: bold;
+  box-shadow: none;
+}
+.quantity-button-numero:hover {
+  cursor: pointer;
+}
+.quantity-button-numero:active {
+  opacity: 90%;
+  transform: scale(0.9);
+}
+
+.quantity-button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 22px;
   background-color: #7869AA;
   margin: 10px;
-  box-shadow: 10px 10px #6F1B1D;
+  box-shadow: 10px 10px #473f3f;
+  font-weight: bold;
 }
 .quantity-button:hover {
   cursor: pointer;
@@ -150,7 +246,7 @@ form .confirmation-button:active {
 
 .footer {
   background-color: white;
-  height: 250px;
+  height: 119px;
   padding: 50px;
 }
 .footer ul {

@@ -15,6 +15,11 @@ html {
     margin-right: 10%;
 }
 
+.boxed-titulo {
+    margin-left: 31%;
+    margin-right: 32%;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -83,19 +88,59 @@ input {
     @include container;
 
     background-color: $background-red;
+
+}
+
+.container-red-titulo {
+    @include container;
+
+    background-color: $background-red;
+    margin-top: -68px;
+    height: 357px;
+
 }
 
 .container-purple {
     @include container;
 
     background-color: $background-purple;
+    text-align: center;
+    
+
 }
+
+.container-purple-titulo {
+    @include container;
+
+    background-color: $background-purple;
+    text-align: center;
+    margin-top: -4px;
+
+}
+
 
 .container-pink {
     @include container;
 
     background-color: $background-pink;
+  
+
 }
+
+.container-pink-titulo {
+    @include container;
+
+    background-color: $background-pink;
+    margin-bottom: -1px;
+    height: 357px;
+
+
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
 
 @mixin card {
     margin-top: 30px;
@@ -114,12 +159,20 @@ input {
     @include card;
 
     background-color: $card-purple;
+    box-shadow: 10px 10px $shadow-titulo;
+
 }
 
 .card-pink {
     @include card;
 
     background-color: $card-pink;
+}
+
+.text-center {
+    text-align: center;
+    color: white;
+
 }
 
 form {
@@ -149,14 +202,81 @@ form {
     }
 }
 
-.quantity-button {
+.div-cadastro {
+    text-align: right;
+}
+
+.titulo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.valor-titulo {
+    font-size: 37px;
+    color: orange;
+    font-weight: bold;
+
+}
+
+.cadastro {
+    width: 122px;
+    height: 32px;
+    color: white;
+    font-size: 18px;
+    background-color: $cadastrar-button;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 10px 10px $shadow-titulo;
+
+
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 90%;
+        transform: scale(0.9);
+    }
+
+}
+
+
+.quantity-button-numero {
     width: 40px;
     height: 40px;
     color: white;
     font-size: 30px;
+    background-color: $background-purple;
+    margin: 10px;
+    font-weight: bold;
+    box-shadow: none;
+
+
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 90%;
+        transform: scale(0.9);
+    }
+
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 22px;
     background-color: $card-purple;
     margin: 10px;
-    box-shadow: 10px 10px $shadow;
+    box-shadow: 10px 10px $shadow-titulo;
+    font-weight: bold;
+
+    
 
     &:hover {
         cursor: pointer;
@@ -170,7 +290,7 @@ form {
 
 .footer {
     background-color: white;
-    height: 250px;
+    height: 119px;
     padding: 50px;
 
     ul {
