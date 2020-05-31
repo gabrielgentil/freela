@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #882222;
+}
+
+.boxed {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:active {
+  color: white;
+}
+
+input {
+  width: 100%;
+  border: 0;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 10px 10px 10px #6F1B1D;
+}
+input:focus {
+  outline: none;
+}
+
+.top-bar {
+  height: 50px;
+  position: relative;
+  padding-left: 2px;
+}
+.top-bar .logotipo {
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+}
+.top-bar .menu {
+  margin-top: 20px;
+}
+.top-bar .menu ul {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  color: white;
+  font-size: 1.3vw;
+  font-weight: 700;
+  list-style-type: none;
+}
+.top-bar .menu ul li {
+  cursor: pointer;
+}
+.top-bar .menu ul li:hover {
+  opacity: 90%;
+  transform: scale(0.8);
+}
+
+.container-red {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #882222;
+}
+
+.container-purple {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #4e4393;
+}
+
+.container-pink {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 20px 50px 55px 50px;
+  background-color: #8a2b45;
+}
+
+.card-red {
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 10px 10px #6F1B1D;
+  background-color: #A8404E;
+}
+
+.card-purple {
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 10px 10px #6F1B1D;
+  background-color: #7869AA;
+}
+
+.card-pink {
+  margin-top: 30px;
+  padding: 20px;
+  min-height: 300px;
+  box-shadow: 10px 10px #6F1B1D;
+  background-color: #8a2b45;
+}
+
+form .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+form .form-group label {
+  padding-right: 10px;
+}
+form .confirmation-button {
+  height: 40px;
+  cursor: pointer;
+  background-color: #2D7A0E;
+  text-transform: uppercase;
+}
+form .confirmation-button:active {
+  opacity: 90%;
+}
+
+.quantity-button {
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 30px;
+  background-color: #7869AA;
+  margin: 10px;
+  box-shadow: 10px 10px #6F1B1D;
+}
+.quantity-button:hover {
+  cursor: pointer;
+}
+.quantity-button:active {
+  opacity: 90%;
+  transform: scale(0.9);
+}
+
+.footer {
+  background-color: white;
+  height: 250px;
+  padding: 50px;
+}
+.footer ul {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  font-size: 2vw;
+  font-weight: 700;
+  list-style-type: none;
+}
+.footer ul li {
+  cursor: pointer;
+}
+.footer ul li:hover {
+  opacity: 90%;
+  transform: scale(0.8);
+}
+
+/*# sourceMappingURL=/main.54166fbf.css.map */

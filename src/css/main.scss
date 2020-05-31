@@ -1,0 +1,193 @@
+@import "variables.scss";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: $background-red;
+}
+
+.boxed {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    &:active {
+        color: white;
+    }
+}
+
+input {
+    width: 100%;
+    border: 0;
+    height: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 10px 10px 10px $shadow;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.top-bar {
+    height: 50px;
+    position: relative;
+    padding-left: 2px;
+
+    .logotipo {
+        width: 150px;
+        height: 50px;
+        background-color: white;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .menu {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 2px;
+            color: white;
+            font-size: 1.3vw;
+            font-weight: 700;
+            list-style-type: none;
+
+            li {
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 90%;
+                    transform: scale(0.8);
+                }
+            }
+        }
+    }
+}
+
+@mixin container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 20px 50px 55px 50px;
+}
+
+.container-red {
+    @include container;
+
+    background-color: $background-red;
+}
+
+.container-purple {
+    @include container;
+
+    background-color: $background-purple;
+}
+
+.container-pink {
+    @include container;
+
+    background-color: $background-pink;
+}
+
+@mixin card {
+    margin-top: 30px;
+    padding: 20px;
+    min-height: 300px;
+    box-shadow: 10px 10px $shadow;
+}
+
+.card-red {
+    @include card;
+
+    background-color: $card-red;
+}
+
+.card-purple {
+    @include card;
+
+    background-color: $card-purple;
+}
+
+.card-pink {
+    @include card;
+
+    background-color: $card-pink;
+}
+
+form {
+    .form-group {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+
+        label {
+            padding-right: 10px;
+        }
+    }
+
+    .confirmation-button {
+        height: 40px;
+        cursor: pointer;
+        background-color: $confirmation-button;
+        text-transform: uppercase;
+
+        &:active {
+            opacity: 90%;
+        }
+    }
+}
+
+.quantity-button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 30px;
+    background-color: $card-purple;
+    margin: 10px;
+    box-shadow: 10px 10px $shadow;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        opacity: 90%;
+        transform: scale(0.9);
+    }
+}
+
+.footer {
+    background-color: white;
+    height: 250px;
+    padding: 50px;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 2px;
+        font-size: 2vw;
+        font-weight: 700;
+        list-style-type: none;
+
+        li {
+            cursor: pointer;
+
+            &:hover {
+                opacity: 90%;
+                transform: scale(0.8);
+            }
+        }
+    }
+}
